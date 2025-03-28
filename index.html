@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="es" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delta Soluciones Académicas: Especialistas en redacción de tesis, artículos científicos y monografías así como parafraseo, revisión y reducción de Turnitin y mucho más . Asesoría académica para estudiantes universitarios.">
+  <meta name="keywords" content="tesis, artículos científicos, redacción académica, asesoría tesis, Puno, monografías, Turnitin">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="/img/logo-delta.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/logo-delta.svg" type="image/x-icon">
+  <link href="src/output.css" rel="stylesheet">
+  <!-- Importar fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Delta Soluciones Académicas</title>
+</head>
+<body class="font-sans">
+    <header class="sticky top-0 z-50 bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <nav class="flex justify-between items-center h-20">
+            <!-- Logo con nombre de empresa en párrafo -->
+            <div class="flex items-center">
+              <a href="#" class="flex items-center">
+                <img id="logo-light" src="img/logo-delta.svg" alt="Logo Delta" class="h-12 w-12 md:h-16 md:w-16 block dark:hidden" />
+                <img id="logo-dark" src="img/logo-delta-dark.svg" alt="Logo Delta" class="h-12 w-12 md:h-16 md:w-16 hidden dark:block" />
+                <p class="ml-3 text-xl md:text-2xl font-display font-medium text-gray-900 dark:text-white">Delta Soluciones Académicas</p>
+              </a>
+            </div>
+            
+            <!-- Navigation menu (desktop) -->
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Inicio</a>
+              <a href="#servicios" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Servicios</a>
+              <a href="#contacto" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Contáctanos</a>
+              
+              <!-- Dark mode toggle -->
+              <button id="theme-toggle" class="p-2 rounded-full border border-gray-300 dark:border-gray-700 focus:outline-none transition-colors duration-300">
+                <!-- Sun icon (for dark mode) -->
+                <svg id="sun-icon" class="hidden dark:block w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                </svg>
+                <!-- Moon icon (for light mode) -->
+                <svg id="moon-icon" class="block dark:hidden w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+              </button>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button id="theme-toggle-mobile" class="p-2 mr-4 rounded-full border border-gray-300 dark:border-gray-700 focus:outline-none transition-colors duration-300">
+                <!-- Sun icon (for dark mode) -->
+                <svg class="hidden dark:block w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                </svg>
+                <!-- Moon icon (for light mode) -->
+                <svg class="block dark:hidden w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+              </button>
+              
+              <button id="mobile-menu-button" class="text-gray-900 dark:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+          
+          <!-- Mobile menu (hidden by default) -->
+          <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+            <div class="flex flex-col space-y-4 px-4">
+              <a href="#" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Inicio</a>
+              <a href="#servicios" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Servicios</a>
+              <a href="#contacto" class="font-sans font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300">Contáctanos</a>
+              <a href="https://wa.me/+1234567890" class="flex items-center justify-center px-4 py-2 font-sans font-medium text-white bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 rounded-md transition-colors duration-300">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <section class="relative min-h-screen">
+        <!-- Imagen de fondo con overlay oscuro (modo oscuro) o claro (modo claro) y efecto parallax -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <div class="parallax-bg absolute inset-0 h-[120%]" style="background-image: url('https://images.unsplash.com/photo-1557131380-85ebd64597a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAzNTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDI2MTk2Mjl8&ixlib=rb-4.0.3&q=80&w=1920'); background-size: cover; background-position: center; transform: translateZ(0);">
+          </div>
+          <!-- Overlay oscuro para modo oscuro -->
+          <div class="absolute inset-0 bg-black bg-opacity-70 dark:bg-opacity-75"></div>
+          <!-- Overlay claro para modo claro (invisible en modo oscuro) -->
+          <div class="absolute inset-0 bg-white bg-opacity-60 dark:bg-opacity-0"></div>
+        </div>
+        
+        <!-- Contenido del Hero -->
+        <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 flex flex-col md:flex-row items-center md:items-start justify-between">
+          
+          <!-- Texto del Hero - Negro en modo claro, blanco en modo oscuro -->
+          <div class="md:w-1/2 md:pr-8 text-gray-900 dark:text-white mb-10 md:mb-0">
+            <h1 class="text-5xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
+              Impulsa tu éxito académico con Delta
+            </h1>
+            
+            <p class="font-sans text-lg opacity-90 mb-8 max-w-xl">
+              Investigamos, redactamos y perfeccionamos tu tesis, artículos científicos y monografías.
+              Nuestro equipo de expertos te asesora en cada etapa de tu proyecto académico para garantizar contenido de calidad y alto impacto.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="#servicios" class="font-sans px-8 py-3 bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 text-lg font-medium rounded-md transition duration-300 text-center">
+                Conoce Nuestro Servicio
+              </a>
+              <a href="#contacto" class="font-sans px-8 py-3 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black text-lg font-medium rounded-md transition duration-300 text-center">
+                Explora Más →
+              </a>
+            </div>
+          </div>
+          
+          <!-- Formulario de contacto más compacto -->
+          <div class="md:w-5/12 lg:w-4/12 bg-white dark:bg-black rounded-lg shadow-xl p-6 dark:border-white dark:border">
+            <h2 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">Contáctanos</h2>
+            
+            <p class="font-sans text-gray-600 dark:text-gray-300 text-sm mb-4">
+              Completa el formulario y te contactaremos pronto
+            </p>
+            
+            <!-- Reemplaza tu actual formulario con este -->
+            <form id="contactForm" action="#" method="POST" class="space-y-4">
+                <!-- Nombre completo -->
+                <div>
+                  <label for="nombre" class="block text-sm font-sans font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" class="font-sans w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent dark:bg-black dark:text-white" required>
+                </div>
+
+                <!-- Tipo de consulta -->
+                <div>
+                  <label for="consulta" class="block text-sm font-sans font-medium text-gray-700 dark:text-gray-300 mb-1">Tipo de consulta</label>
+                  <select id="consulta" name="consulta" class="font-sans w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent dark:bg-black dark:text-white" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="tesis de pregrado">Tesis de pregrado</option>
+                    <option value="tesis de posgrado">Tesis de posgrado</option>
+                    <option value="artículo científico">Artículo científico</option>
+                    <option value="monografía">Monografía</option>
+                    <option value="monografía">Informe de Prácticas</option>
+                    <option value="monografía">Levantamiento de Observaciones</option>
+                    <option value="monografía">Revisión Turnitin</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <!-- Carrera -->
+                <div>
+                  <label for="carrera" class="block text-sm font-sans font-medium text-gray-700 dark:text-gray-300 mb-1">Carrera</label>
+                  <input type="text" id="carrera" name="carrera" placeholder="Tu carrera universitaria" class="font-sans w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent dark:bg-black dark:text-white" required>
+                </div>
+
+                <!-- WhatsApp -->
+                <div>
+                  <label for="whatsapp" class="block text-sm font-sans font-medium text-gray-700 dark:text-gray-300 mb-1">WhatsApp</label>
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="Tu número de WhatsApp" class="font-sans w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent dark:bg-black dark:text-white" required>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="font-sans w-full py-2 px-4 bg-black hover:bg-gray-800 text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 font-medium rounded-md transition-colors duration-300">
+                  ENVIAR
+                </button>
+              </form>
+          </div>
+        </div>
+    </section>
+    
+    <section id="servicios" class="py-16 bg-white dark:bg-black">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">Nuestros Servicios</h2>
+            <p class="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Ofrecemos soluciones académicas especializadas para ayudarte a alcanzar la excelencia en tu carrera universitaria.
+            </p>
+          </div>
+      
+          <!-- Carrusel de servicios con Alpine.js -->
+          <div x-data="{ 
+            activeSlide: 0, 
+            slides: 8, 
+            interval: 3000,
+            autoplay: true,
+            goToPrev() { 
+              this.activeSlide = this.activeSlide === 0 ? this.slides - 3 : this.activeSlide - 1 
+            }, 
+            goToNext() { 
+              this.activeSlide = this.activeSlide === this.slides - 3 ? 0 : this.activeSlide + 1 
+            }
+          }" 
+          x-init="setInterval(function(){ if(autoplay) goToNext() }, interval)" 
+          class="relative">
+            <!-- Flechas de navegación -->
+            <button @click="goToPrev" class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-4 lg:-ml-6 bg-white dark:bg-gray-800 rounded-full p-2 shadow-md z-10 focus:outline-none">
+              <svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+            </button>
+            
+            <button @click="goToNext" class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-4 lg:-mr-6 bg-white dark:bg-gray-800 rounded-full p-2 shadow-md z-10 focus:outline-none">
+              <svg class="w-6 h-6 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            
+            <!-- Contenedor de tarjetas -->
+            <div class="overflow-hidden">
+              <div class="flex transition-transform duration-500 ease-in-out" :style="`transform: translateX(-${activeSlide * 33.33}%)`">
+                
+                <!-- Tarjeta 1: Redacción de Tesis de Pregrado -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Redacción de Tesis de Pregrado</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Desarrollo completo de tesis para obtener tu título profesional.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Redacción de Tesis de Pregrado</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Planteamiento del problema
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Marco teórico
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Metodología
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Resultados y discusión
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 2: Redacción de Tesis de Posgrado -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Redacción de Tesis de Posgrado</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Investigación avanzada para maestrías y doctorados.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Redacción de Tesis de Posgrado</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Investigación profunda
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis crítico avanzado
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Metodologías especializadas
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Contribución original al campo
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 3: Artículo Científico -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Artículo Científico</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Redacción para publicación en revistas académicas indexadas.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Artículo Científico</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Estructura IMRyD
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Revisión de literatura
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis de resultados
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Adaptación a normas de revista
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 4: Monografías -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Monografías</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Trabajos académicos sobre temas específicos con enfoque descriptivo.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Monografías</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Investigación bibliográfica
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis de fuentes
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Enfoque descriptivo
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Estructura académica formal
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 5: Informes de prácticas -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Informes de Prácticas</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Documentación estructurada de experiencias prácticas profesionales.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Informes de Prácticas</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Documentación de actividades
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis de experiencias
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Reflexión sobre el aprendizaje
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Evidencias de desempeño
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 6: Levantamiento de Observaciones -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Levantamiento de Observaciones</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Corrección detallada de observaciones en proyectos académicos.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Levantamiento de Observaciones</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis de observaciones
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Correcciones fundamentadas
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Mejora de argumentos
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Reformulación metodológica
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 7: Revisión Turnitin -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Revisión Turnitin</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Análisis previo para detectar y corregir similitudes no deseadas.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Revisión Turnitin</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Detección de plagio
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Análisis de similitudes
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Reporte detallado
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Recomendaciones de mejora
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tarjeta 8: Parafraseo y disminución de Turnitin -->
+                <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                  <div class="bg-gray-50 dark:border dark:border-white dark:bg-black rounded-lg shadow-md overflow-hidden h-80 group relative transition-all duration-300 hover:shadow-xl">
+                    <div class="p-6 h-full flex flex-col">
+                      <div class="mb-4 text-black dark:text-white">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white mb-2">Parafraseo Profesional</h3>
+                      <p class="font-sans text-gray-600 dark:text-gray-300 mb-4">Reescritura académica para reducir similitudes y mantener la originalidad.</p>
+                      
+                      <!-- Detalles que aparecen al hacer hover -->
+                      <div class="absolute inset-0 bg-black dark:bg-white bg-opacity-90 dark:bg-opacity-90 flex flex-col justify-center px-6 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-display font-bold text-white dark:text-black mb-4">Parafraseo Profesional</h3>
+                        <ul class="font-sans text-white dark:text-black text-sm space-y-2">
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Reducción de similitudes
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Mantenimiento del significado
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Mejora estilística
+                          </li>
+                          <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Adecuación a normas académicas
+                          </li>
+                        </ul>
+                        <a href="#contacto" class="mt-6 inline-flex items-center font-sans text-sm font-medium text-white dark:text-black">
+                          Solicitar información
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <!-- Indicadores de posición (opcional) -->
+            <div class="flex justify-center mt-8 space-x-2">
+              <template x-for="i in slides - 2" :key="i">
+                <button @click="activeSlide = i - 1" :class="{'bg-gray-800 dark:bg-white': activeSlide === i - 1, 'bg-gray-300 dark:bg-gray-600': activeSlide !== i - 1}" class="w-3 h-3 rounded-full focus:outline-none transition-colors duration-300"></button>
+              </template>
+            </div>
+          </div>
+        </div>
+    </section>
+
+<!-- Sección de Estadísticas con Animación -->
+    <section class="py-16 bg-gray-50 dark:bg-black transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <!-- Columna de texto e imagen SVG -->
+            <div class="md:w-1/2 mb-10 md:mb-0">
+              <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">
+                Nuestro compromiso con la excelencia académica
+              </h2>
+
+              <p class="font-sans text-lg text-gray-600 dark:text-gray-300 mb-8">
+                En Delta Soluciones Académicas nos dedicamos a brindar un servicio de alta calidad. Nuestros resultados hablan por sí mismos, con un alto índice de aprobación y satisfacción entre nuestros    estudiantes.
+              </p>
+
+              <!-- SVG para modo claro y oscuro -->
+              <div class="mt-8">
+                <img id="stats-svg-light" src="img/undraw_reviews_ukai.svg" alt="Estadísticas de éxito" class="w-full max-w-md mx-auto block dark:hidden" />
+                <img id="stats-svg-dark" src="img/svg-modo-oscuro.svg" alt="Estadísticas de éxito" class="w-full max-w-md mx-auto hidden dark:block" />
+              </div>
+            </div>
+
+            <!-- Columna de estadísticas -->
+            <div class="md:w-1/2">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- Estadística 1: Tesis aprobadas -->
+                <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white">Tesis Aprobadas</h3>
+                    <div class="text-black dark:text-white">
+                      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="relative h-4 bg-gray-200 dark:bg-gray-700 rounded-full mb-2">
+                    <div class="stat-bar h-full bg-black dark:bg-white rounded-full" data-percent="98" style="width: 0%"></div>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <span class="text-3xl font-display font-bold text-black dark:text-white stat-counter" data-target="98">0</span>
+                    <span class="text-xl font-display font-bold text-black dark:text-white">%</span>
+                  </div>
+                  <p class="font-sans text-gray-600 dark:text-gray-300 mt-2">De nuestras tesis son aprobadas en primera presentación</p>
+                </div>
+
+                <!-- Estadística 2: Satisfacción -->
+                <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white">Satisfacción</h3>
+                    <div class="text-black dark:text-white">
+                      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="relative h-4 bg-gray-200 dark:bg-gray-700 rounded-full mb-2">
+                    <div class="stat-bar h-full bg-black dark:bg-white rounded-full" data-percent="95" style="width: 0%"></div>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <span class="text-3xl font-display font-bold text-black dark:text-white stat-counter" data-target="95">0</span>
+                    <span class="text-xl font-display font-bold text-black dark:text-white">%</span>
+                  </div>
+                  <p class="font-sans text-gray-600 dark:text-gray-300 mt-2">De nuestros clientes están satisfechos con nuestro servicio</p>
+                </div>
+
+                <!-- Estadística 3: Clientes recurrentes -->
+                <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white">Recurrencia</h3>
+                    <div class="text-black dark:text-white">
+                      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="relative h-4 bg-gray-200 dark:bg-gray-700 rounded-full mb-2">
+                    <div class="stat-bar h-full bg-black dark:bg-white rounded-full" data-percent="87" style="width: 0%"></div>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <span class="text-3xl font-display font-bold text-black dark:text-white stat-counter" data-target="87">0</span>
+                    <span class="text-xl font-display font-bold text-black dark:text-white">%</span>
+                  </div>
+                  <p class="font-sans text-gray-600 dark:text-gray-300 mt-2">De nuestros clientes vuelven a solicitar nuestros servicios</p>
+                </div>
+
+                <!-- Estadística 4: Recomendaciones -->
+                <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-display font-bold text-gray-900 dark:text-white">Recomendación</h3>
+                    <div class="text-black dark:text-white">
+                      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></  path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="relative h-4 bg-gray-200 dark:bg-gray-700 rounded-full mb-2">
+                    <div class="stat-bar h-full bg-black dark:bg-white rounded-full" data-percent="91" style="width: 0%"></div>
+                  </div>
+
+                  <div class="flex justify-between items-center">
+                    <span class="text-3xl font-display font-bold text-black dark:text-white stat-counter" data-target="91">0</span>
+                    <span class="text-xl font-display font-bold text-black dark:text-white">%</span>
+                  </div>
+                  <p class="font-sans text-gray-600 dark:text-gray-300 mt-2">De nuestros clientes nos recomiendan a otros estudiantes</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Testimonios Rediseñada -->
+    <section class="py-16 bg-white dark:bg-black transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
+              Testimonios de Nuestros Clientes
+            </h2>
+            <p class="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Conoce las experiencias de estudiantes que han confiado en nosotros para alcanzar sus metas académicas.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonio 1: Carlos Mendoza -->
+            <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div class="flex flex-col items-center p-6">
+                <!-- Avatar centrado -->
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6">
+                  <img src="img/avatar-carlos.jpg" alt="Carlos Mendoza" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/96?text=CM'; this.onerror=null;">
+                </div>
+                
+                <!-- Contenido del testimonio -->
+                <p class="font-sans text-gray-600 dark:text-gray-300 text-center mb-6">
+                  "Gracias a Delta Soluciones Académicas pude terminar mi tesis en los plazos acordados. Su asesoría metodológica fue invaluable para estructurar correctamente mi investigación. Los recomiendo al     100%."
+                </p>
+                
+                <!-- Información del cliente -->
+                <div class="text-center">
+                  <h4 class="font-display font-bold text-gray-900 dark:text-white text-lg">Carlos Mendoza</h4>
+                  <p class="font-sans text-gray-500 dark:text-gray-400">Licenciatura en Enfermería</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonio 2: Laura Gutiérrez -->
+            <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div class="flex flex-col items-center p-6">
+                <!-- Avatar centrado -->
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6">
+                  <img src="img/avatar-laura.jpg" alt="Laura Gutiérrez" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/96?text=LG'; this.onerror=null;">
+                </div>
+                
+                <!-- Contenido del testimonio -->
+                <p class="font-sans text-gray-600 dark:text-gray-300 text-center mb-6">
+                  "Estaba estancada con mi tesis de maestría hasta que encontré Delta Soluciones Académicas. Su equipo de asesores me ayudó a armar mi marco teórico y realizar mi investigación."
+                </p>
+                
+                <!-- Información del cliente -->
+                <div class="text-center">
+                  <h4 class="font-display font-bold text-gray-900 dark:text-white text-lg">Laura Gutiérrez</h4>
+                  <p class="font-sans text-gray-500 dark:text-gray-400">Maestría en Administración y gerencia educativa</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonio 3: Miguel Sánchez -->
+            <div class="bg-white dark:bg-black dark:border dark:border-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div class="flex flex-col items-center p-6">
+                <!-- Avatar centrado -->
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6">
+                  <img src="img/avatar-miguel.jpg" alt="Miguel Sánchez" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/96?text=MS'; this.onerror=null;">
+                </div>
+                
+                <!-- Contenido del testimonio -->
+                <p class="font-sans text-gray-600 dark:text-gray-300 text-center mb-6">
+                  "El servicio de corrección de estilo y reducción de porcentaje en Turnitin de Delta Soluciones Académicas me ayudó con la aprobación de mi proyecto. Quedé satisfecho con la calidad de redacción     y la precisión en el formato académico requerido."
+                </p>
+                
+                <!-- Información del cliente -->
+                <div class="text-center">
+                  <h4 class="font-display font-bold text-gray-900 dark:text-white text-lg">Miguel Sánchez</h4>
+                  <p class="font-sans text-gray-500 dark:text-gray-400">Maestría en Derecho constitucional y procesal constitucional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Sección de Universidades Corregida -->
+    <section class="py-16 bg-gray-50 dark:bg-black transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
+              Nuestra Presencia Universitaria
+            </h2>
+            <p class="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Nos enorgullece trabajar con estudiantes de las principales universidades del país.
+              Nuestra experiencia nos permite entender los requisitos específicos de cada institución.
+            </p>
+          </div>
+
+          <!-- Logos de universidades en grid - Versión corregida -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-12">
+            <!-- Universidad 1: UANCV -->
+            <div class="flex flex-col items-center">
+              <div class="h-24 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-md dark:shadow-gray-900 transition-all duration-300 hover:shadow-lg">
+                <img src="img/uancv logo.png" alt="Universidad Andina Nestor Caceres Velasquez" 
+                     class="h-16 w-auto object-contain filter grayscale opacity-80" />
+              </div>
+              <p class="font-sans text-sm text-gray-600 dark:text-gray-400 mt-3 text-center">UANCV</p>
+            </div>
+
+            <!-- Universidad 2: UNAJ -->
+            <div class="flex flex-col items-center">
+              <div class="h-24 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-md dark:shadow-gray-900 transition-all duration-300 hover:shadow-lg">
+                <img src="img/unaj-logo.png" alt="Universidad Nacional de Juliaca" 
+                     class="h-16 w-auto object-contain filter grayscale opacity-80" />
+              </div>
+              <p class="font-sans text-sm text-gray-600 dark:text-gray-400 mt-3 text-center">UNAJ</p>
+            </div>
+
+            <!-- Universidad 3: UPEU -->
+            <div class="flex flex-col items-center">
+              <div class="h-24 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-md dark:shadow-gray-900 transition-all duration-300 hover:shadow-lg">
+                <img src="img/Upeu-logo.png" alt="Universidad Peruana Unión" 
+                     class="h-16 w-auto object-contain filter grayscale opacity-80" />
+              </div>
+              <p class="font-sans text-sm text-gray-600 dark:text-gray-400 mt-3 text-center">UPEU</p>
+            </div>
+
+            <!-- Universidad 4: UTP -->
+            <div class="flex flex-col items-center">
+              <div class="h-24 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-md dark:shadow-gray-900 transition-all duration-300 hover:shadow-lg">
+                <img src="img/UTP-logo.png" alt="Universidad Tecnológica del Perú" 
+                     class="h-16 w-auto object-contain filter grayscale opacity-80 " />
+              </div>
+              <p class="font-sans text-sm text-gray-600 dark:text-gray-400 mt-3 text-center">UTP</p>
+            </div>
+
+            <!-- Universidad 5: UNMSM (ejemplo, reemplazar con la universidad deseada) -->
+            <div class="flex flex-col items-center">
+              <div class="h-24 w-full flex items-center justify-center bg-white p-4 rounded-lg shadow-md dark:shadow-gray-900 transition-all duration-300 hover:shadow-lg">
+                <img src="img/U-continental-logo.png" alt="Universidad Nacional Mayor de San Marcos" 
+                     class="h-16 w-auto object-contain filter grayscale opacity-80" />
+              </div>
+              <p class="font-sans text-sm text-gray-600 dark:text-gray-400 mt-3 text-center">U. CONTINENTAL</p>
+            </div>
+          </div>
+
+          <!-- Nota adicional -->
+          <div class="text-center mt-10">
+            <p class="font-sans text-gray-600 dark:text-gray-400 italic">
+              *También brindamos soporte a estudiantes de otras universidades públicas y privadas a nivel nacional.
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+<!-- WhatsApp Chat Simulado -->
+<div class="fixed bottom-4 right-4 z-50 flex flex-col items-end">
+    <!-- Botón de WhatsApp (visible cuando el chat está cerrado) -->
+    <button id="whatsapp-button" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 flex items-center mb-2">
+      <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Escríbenos a WhatsApp!
+    </button>
+
+    <!-- Ventana de chat (oculta por defecto) -->
+    <div id="whatsapp-chat" class="bg-gray-100 rounded-lg shadow-xl w-80 overflow-hidden hidden">
+      <!-- Encabezado -->
+      <div class="bg-green-500 text-white p-3 flex justify-between items-center">
+        <div class="flex items-center">
+          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Delta Soluciones
+        </div>
+        <button id="close-chat" class="text-white focus:outline-none">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Contenido del chat -->
+      <div class="p-3 h-72 bg-[#e5ddd5] overflow-y-auto">
+        <!-- Mensaje del agente -->
+        <div class="flex mb-3">
+          <div class="bg-white rounded-lg p-2 max-w-3/4 shadow">
+            <div class="flex items-center mb-1">
+              <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold mr-2">D</div>
+              <span class="text-xs text-green-600 font-medium">Delta Soluciones</span>
+            </div>
+            <p class="text-sm">Hola 👋 ¿Cómo puedo ayudarte?</p>
+            <p class="text-xs text-gray-500 text-right">12:15</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área de entrada de mensaje -->
+      <div class="bg-white p-2 flex items-center">
+        <input id="whatsapp-input" type="text" placeholder="Escribe tu mensaje..." class="flex-1 border rounded-full py-2 px-4 focus:outline-none focus:border-green-500">
+        <button id="send-message" class="ml-2 bg-blue-500 text-white rounded-full p-2 hover:bg-blue-600 transition-colors duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+    <footer class="bg-white dark:bg-black text-gray-800 dark:text-white pt-12 pb-8 border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Footer Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+
+            <!-- Columna 1: Información de contacto -->
+            <div>
+              <h3 class="text-xl font-display font-bold mb-4">Contáctanos</h3>
+              <ul class="font-sans space-y-3">
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                  <a href="tel:+51123456789" class="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300">+51 123 456 789</a>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  <a href="mailto:info@deltasoluciones.com" class="text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300">info@deltasoluciones.com</a>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  <span>Puno - Perú</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Columna 2: Promociones y descuentos -->
+            <div>
+              <h3 class="text-xl font-display font-bold mb-4">Ofertas especiales</h3>
+            
+              <!-- Descuento para estudiantes -->
+              <div class="bg-white dark:bg-black p-4 rounded-lg border border-gray-300 dark:border-white mb-4">
+                <p class="font-sans mb-2">🎓 <strong>¡Descuento para estudiantes!</strong></p>
+                <p class="font-sans mb-2">20% OFF en tu primera asesoría académica</p>
+                <p class="font-sans mb-2">15% OFF para grupos de 3 o más estudiantes</p>
+                <p class="font-sans text-sm text-gray-500 dark:text-gray-400">*Promociones por tiempo limitado</p>
+              </div>
+
+              <!-- Referidos -->
+              <div class="bg-white dark:bg-black p-4 rounded-lg border border-gray-300 dark:border-white">
+                <p class="font-sans mb-2">🎯 <strong>Referidos</strong></p>
+                <p class="font-sans">15% de descuento por cada amigo que refieras</p>
+              </div>
+            </div>
+
+            <!-- Columna 3: Métodos de pago -->
+            <div>
+              <h3 class="text-xl font-display font-bold mb-4">Métodos de pago</h3>
+            
+              <!-- Yape -->
+              <div class="bg-white dark:bg-black p-4 rounded-lg border border-gray-300 dark:border-white flex items-center mb-4">
+                <div class="w-16 h-16 flex items-center justify-center mr-3">
+                  <img src="img/yape.png" alt="Logo Yape" class="w-auto h-12 object-contain rounded-md">
+                </div>
+                <div>
+                  <p class="font-sans font-bold text-gray-800 dark:text-white">Yape</p>
+                  <p class="font-sans text-sm text-gray-600 dark:text-gray-300">Pago rápido con QR</p>
+                </div>
+              </div>
+
+              <!-- Plin -->
+              <div class="bg-white dark:bg-black p-4 rounded-lg border border-gray-300 dark:border-white flex items-center">
+                <div class="w-16 h-16 flex items-center justify-center mr-3">
+                  <img src="img/plin.jpeg" alt="Logo Plin" class="w-auto h-12 object-contain rounded-md">
+                </div>
+                <div>
+                  <p class="font-sans font-bold text-gray-800 dark:text-white">Plin</p>
+                  <p class="font-sans text-sm text-gray-600 dark:text-gray-300">Transferencia inmediata</p>
+                </div>
+              </div>
+
+              <p class="font-sans text-sm mt-3 text-gray-600 dark:text-gray-300">También aceptamos transferencias bancarias a cuentas BCP, Interbank y BBVA</p>
+            </div>
+          </div>
+
+          <!-- Separador -->
+          <div class="border-t border-gray-200 dark:border-gray-800 pt-8 pb-4">
+            <!-- Redes sociales -->
+            <div class="flex justify-center space-x-8 mb-6">
+              <!-- Facebook -->
+              <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465.668.25 1.221.611 1.772 1.172.56.56.921 1.114 1.172 1.772.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.94 4.94 0 01-1.172 1.772 4.94 4.94 0 01-1.772 1.172c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.94 4.94 0 01-1.772-1.172 4.94 4.94 0 01-1.172-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.94 4.94 0 011.172-1.772A4.94 4.94 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+                </svg>
+              </a>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/+51123456789" class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center">
+              <p class="font-sans text-sm text-gray-500 dark:text-gray-400">
+                © 2025 Delta Soluciones Académicas. Todos los derechos reservados.
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Script para Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+                            
+    <script src="src/scripts.js"></script>
+</body>
+</html>
